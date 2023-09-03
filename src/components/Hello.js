@@ -1,15 +1,8 @@
-/*
-// Code for the Hello component using function syntax
-function Hello() {
-    //Return JSX
-    return <h1>Hello World!</h1>
-}
-*/
+const name = "IBXCODECAT";
 
-// Code for the Hello component using arrow function syntax
 const Hello = () => {
     //Return JSX
-    return <h1>Hello World!</h1>
+    return <h1>Hello {name}!</h1>
 }
 
 //Exporting the component
