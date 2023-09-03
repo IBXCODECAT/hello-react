@@ -7,7 +7,7 @@ class Message extends Component
     render()
     {
         // Return JSX
-        return <p>This is a paragraph!</p>;
+        return <h2>Props: {this.props.messagecontent}</h2>;
     }
 }
 

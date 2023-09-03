@@ -11,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Hello />
-      <Message />
+      <Message messagecontent="Message from props!"/>
+
       <Profile fname="Nathan" lname="Schmitt"/>
       <Profile fname="John" lname="Doe"/>
       <Profile fname="Egg" lname="Head"/>
