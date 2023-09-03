@@ -6,8 +6,11 @@ class Message extends Component
     // Render the component
     render()
     {
+        // Destructure Props
+        const {messagecontent} = this.props;
+        
         // Return JSX
-        return <h2>Props: {this.props.messagecontent}</h2>;
+        return <h2>Props: {messagecontent}</h2>;
     }
 }
 
