@@ -12,11 +12,19 @@ class Counter extends Component
         this.state = {
             count: 0
         };
+
+        // Bind the this keyword to the component so 
+        // that it can be used in the methods
+        this.increment = this.increment.bind(this);
+        this.decrement = this.decrement.bind(this);
     }
 
     // This method will be called when the button is clicked
     increment()
     {
+        // This will print udnefined because the this keyword is not bound to the component
+        console.log(this);
+
         // This will not work, state is read-only
         //this.state.count += 1;
 
@@ -43,8 +51,8 @@ class Counter extends Component
             // JSX
             <div>
                 <h3>Count value is: {this.state.count}</h3>
-                <button onClick={() => this.increment()}>Increment Counter</button>
-                <button onClick={() => this.decrement()}>Decrement Counter</button>
+                <button onClick={this.increment}>Increment Counter</button>
+                <button onClick={this.decrement}>Decrement Counter</button>
             </div>
         );
     }

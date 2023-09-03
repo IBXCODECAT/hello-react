@@ -8,11 +8,15 @@ import Message from './components/Message';
 import Profile from './components/Profile';
 import Counter from './components/Counter';
 
+import FuncEvent from './components/FunctionEvent';
+
 function App() {
   return (
     <div className="App">
       
       <Counter />
+
+      <FuncEvent />
 
       <Hello />
       <Message messagecontent="Message from props!"/>
